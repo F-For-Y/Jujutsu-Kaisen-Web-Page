@@ -1,0 +1,94 @@
+body {
+    font-family: Arial;
+    background-color: #191c22;
+    color: white;
+    background-image: url("../img/background/background.jpg");
+}
+
+main > div {
+    width: 95%;
+    margin: 0 auto;
+    background-color: #191c22;
+}
+
+h1 {
+    font-size: 2.5em;
+    color: white;
+}
+
+h2 {
+  font-size: 2em;
+  color: white;
+}
+
+div h1 {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+div h2 {
+    font-size: 2em;
+    text-align: center;
+    padding: 20px;
+    border-bottom: 2px solid white;
+}
+
+nav {
+  width: 95%;
+  margin: 0 auto;
+  font-family: 'Black Ops One';
+  font-weight: bold;
+  padding-bottom: 10px;
+  background-color: #191c22;
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 40px;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+nav ul li {
+  text-decoration: none;
+  font-size: 21px;
+  display: inline-block;
+  padding: 10px 20px;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: space-between;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+a.current {
+  text-decoration: underline;
+}
+
+/* -------------------------------------------/* Class space container */
+
+
+/* -------------------------------------------/* Size for mobile phone */
+@media screen and (max-width: 1000px) {
+  main > div > div {
+    padding: 0 80px;
+  }
+}
+
+/* -----------------------------------------/* Size for mobile pad */
+@media screen and (max-width: 700px) {
+  /* change the grid display for intro */
+  main > div > div {
+    padding: 10px;
+  }
+
+  nav {
+    display: flex;
+    flex-direction: column;
+  }
+}
