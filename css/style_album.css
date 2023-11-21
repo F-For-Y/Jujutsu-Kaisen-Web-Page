@@ -1,0 +1,210 @@
+body {
+    font-family: Arial;
+    background-color: #191c22;
+    color: white;
+    background-image: url("../img/background/background.jpg");
+}
+
+main > div {
+    width: 95%;
+    margin: 0 auto;
+    background-color: #191c22;
+    padding-bottom: 50px;
+}
+
+h1 {
+    font-size: 2.5em;
+    color: white;
+    border-bottom: 2px solid white;
+}
+
+h2 {
+  font-size: 2em;
+  color: white;
+}
+
+div h1 {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+div h2 {
+    font-size: 2em;
+    text-align: center;
+    padding: 20px;
+    border-bottom: 2px solid white;
+}
+
+nav {
+  width: 95%;
+  margin: 0 auto;
+  font-family: 'Black Ops One';
+  font-weight: bold;
+  padding-bottom: 10px;
+  background-color: #191c22;
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 40px;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+nav ul li {
+  text-decoration: none;
+  font-size: 21px;
+  display: inline-block;
+  padding: 10px 20px;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: space-between;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+a.current {
+  text-decoration: underline;
+}
+
+/* -------------------------------------------/* Class album container */
+.space {
+  /* border: 2px solid white;   */
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  flex-direction: row;
+}
+
+.album {
+  /* border: 2px solid white;   */
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.album1, .album2, .album3, .album4 {
+  margin: 5% 5% 0 5%;
+  /* border: 0.5px solid white; */
+  border-radius: 5%;
+  background-color: rgba(211,211,211,0.2);
+  transition: transform .5s ease;
+}
+
+.album1:hover, .album2:hover, .album3:hover, .album4:hover {
+  transform: scale(1.1);
+  background-color: rgba(211,211,211,0.5);
+}
+
+.album1:focus, .album2:focus, .album3:focus, .album4:focus {
+  transform: scale(1.1);
+  background-color: rgba(211,211,211,0.5);
+}
+
+.album img{
+  padding: 20px;
+}
+
+p.albumname {
+  font-size: 1.0em;
+  font-weight: bold;
+  font-style: italic;
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+
+/* -------------------------------------------/* Class spotify container */
+.spotify {
+  /* border: 2px solid white;   */
+  display: flex;
+  flex-direction: column;
+  line-height: 1.5;
+  font-family: 'Black Ops One';
+}
+
+.spotify h3{
+  font-size: 1.2em;
+  font-weight: bold;
+  font-style: italic;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.spotify p {
+  width: 90%;
+  margin: 0 auto;
+  font-size: 1.0em;
+  /* text-align: center; */
+}
+
+.song {
+  height: 500px;
+  width: 90%;
+  margin: 0 5%;
+  text-align: center;
+}
+
+#season11, #film, #season2 {
+  display: none;
+}
+
+/* -------------------------------------------/* Size for mobile phone */
+@media screen and (max-width: 1100px) {
+  .song {
+    height: 400px;
+  }
+}
+
+/* -----------------------------------------/* Size for mobile pad */
+@media screen and (max-width: 900px) {
+  .album {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  nav {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 700px){
+  .space {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+}
+
+footer {
+  width: 95%;
+  margin: 0 auto;
+  background-color: #191c22;
+  text-align: center;
+}
+
+.skip a{
+  position: absolute;
+  top: -70px;
+  left: 50px;
+  padding: 6px;
+  -webkit-transition: top 1s ease-out;
+  transition: top 1s ease-out;
+  z-index: 1;
+  width: 100px;
+  background-color: #717171;
+  border-radius: 10px;
+  color: white;
+  text-align: center;
+  font-family: 'Black Ops One';
+  font-size: 15px;
+  text-decoration: none;
+}
+
+
+.skip a:focus{
+  top: 20px;
+}
