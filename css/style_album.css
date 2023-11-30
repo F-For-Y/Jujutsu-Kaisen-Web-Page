@@ -36,6 +36,13 @@ div h2 {
     border-bottom: 2px solid white;
 }
 
+.content_head {
+    font-size: 2em;
+    text-align: center;
+    padding: 20px;
+    border-bottom: 0px solid white;
+}
+
 nav {
   width: 95%;
   margin: 0 auto;
